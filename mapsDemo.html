@@ -26,8 +26,9 @@
       function initMap() {
 
         var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 9,
-          center: {lat: 35.0116313, lng: 135.73301}
+          zoom: 11,
+          center: {lat: 35.0116313, lng: 135.73301},
+          /*  styles: [{"featureType":"landscape.man_made","elementType":"geometry","stylers":[{"color":"#f7f1df"}]},{"featureType":"landscape.natural","elementType":"geometry","stylers":[{"color":"#d0e3b4"}]},{"featureType":"landscape.natural.terrain","elementType":"geometry","stylers":[{"visibility":"off"}]},{"featureType":"poi","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"poi.business","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"poi.medical","elementType":"geometry","stylers":[{"color":"#fbd3da"}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#bde6ab"}]},{"featureType":"road","elementType":"geometry.stroke","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ffe15f"}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#efd151"}]},{"featureType":"road.arterial","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"road.local","elementType":"geometry.fill","stylers":[{"color":"black"}]},{"featureType":"transit.station.airport","elementType":"geometry.fill","stylers":[{"color":"#cfb2db"}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#a2daf2"}]}]*/
         });
 
         // Create an array of alphabetical characters used to label the markers.
@@ -49,9 +50,15 @@
             {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
       }
       var locations = [
-        {lat: 34.435912, lng: 135.243496},
-        {lat: 35.0102, lng: 135.6817},
-        {lat: 35.0120647, lng: 135.6761498}
+        //{lat: 34.435912, lng: 135.243496},//Kansai Airport
+        {lat: 35.0160, lng: 135.7824},//Heian Shrine
+        {lat: 35.0114, lng: 135.7938},//Nanzen-ji Shrine
+        {lat: 34.9671, lng: 135.7727},//Fushimi Inari Taisha
+        {lat: 34.967558, lng: 135.7722651},//Neko Cafe
+        {lat: 35.0254, lng: 135.7621},//Kyoto Imperial Palace
+        {lat: 35.0394, lng: 135.7292},//Golden Pavillion
+        {lat: 35.0113, lng: 135.6767},//Monkey Park
+        {lat: 35.0102, lng: 135.6817}//Arashiyama Station
       ]
     </script>
     <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
@@ -59,5 +66,6 @@
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmBxuHEucR28idDnUz2jLTzwjhz95Moo4&callback=initMap">
     </script>
+
   </body>
 </html>
